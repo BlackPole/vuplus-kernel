@@ -941,7 +941,7 @@ static inline void cpu_probe_broadcom(struct cpuinfo_mips *c, unsigned int cpu)
 		if (rev >= PRID_REV_BMIPS4380_LO &&
 				rev <= PRID_REV_BMIPS4380_HI) {
 			c->cputype = CPU_BMIPS4380;
-			__cpu_name[cpu] = "Broadcom BMIPS4380";
+			__cpu_name[cpu] = "Brcm4380";
 			set_elf_platform(cpu, "bmips4380");
 		} else {
 			c->cputype = CPU_BMIPS4350;
