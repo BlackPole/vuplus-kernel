@@ -1,0 +1,18 @@
+
+#define DVB_LL_VERSION1 10
+
+#define DVB_LL_VERSION2 10
+
+#define DVB_LL_VERSION3 3
+
+#define DVB_LL_VERSION4 0
+
+
+#define DVB_OFDM_VERSION1 4
+
+#define DVB_OFDM_VERSION2 21
+
+#define DVB_OFDM_VERSION3 6
+
+#define DVB_OFDM_VERSION4 251
+
