@@ -374,3 +374,12 @@ config DVB_USB_TECHNISAT_USB2
 	select DVB_STV6110x if !DVB_FE_CUSTOMISE
 	help
 	  Say Y here to support the Technisat USB2 DVB-S/S2 device
+
+config DVB_USB_A867
+	tristate "Avermedia A867 DVB receiver"
+	depends on DVB_USB
+	default m
+	help
+	  Choose Y or M here if you have an Avermedia A867 device
+	  To compile this driver as a module, choose M here
+
