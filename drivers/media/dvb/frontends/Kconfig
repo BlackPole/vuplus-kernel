@@ -411,6 +411,13 @@ config DVB_CXD2820R
 	help
 	  Say Y when you want to support this frontend.
 
+config DVB_AF9033
+       tristate "Afatech AF9033 demodulator"
+       depends on DVB_CORE && I2C
+       default m
+       help
+         Say Y when you want to support this frontend.
+
 comment "DVB-C (cable) frontends"
 	depends on DVB_CORE
 
