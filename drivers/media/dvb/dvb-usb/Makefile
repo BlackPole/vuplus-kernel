@@ -100,6 +100,9 @@ dvb-usb-a867-objs := a867_af903x-core.o a867_af903x-devices.o a867_af903x-drv.o 
 			a867_user.o a867_mxl5007t.o a867_Maxlinear_MXL5007.o a867_Afa_AF9007.o
 obj-$(CONFIG_DVB_USB_A867) += dvb-usb-a867.o
 
+dvb-usb-af9035-objs = af9035.o
+obj-$(CONFIG_DVB_USB_AF9035) += dvb-usb-af9035.o
+
 EXTRA_CFLAGS += -Idrivers/media/dvb/dvb-core/ -Idrivers/media/dvb/frontends/
 # due to tuner-xc3028
 EXTRA_CFLAGS += -Idrivers/media/common/tuners
