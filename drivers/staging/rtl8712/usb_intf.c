@@ -164,6 +164,8 @@ static struct usb_device_id rtl871x_usb_id_tbl[] = {
 	{USB_DEVICE(0x7392, 0x7622)},
 	/* NEC */
 	{USB_DEVICE(0x0409, 0x02B6)},
+	/* Sitecom */
+	{USB_DEVICE(0x0df6, 0x005b)}, /* Wireless Network USB Micro Adapter 150N */
 	{}
 };
 
