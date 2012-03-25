@@ -394,3 +394,10 @@ config DVB_USB_AF9035
        help
          Say Y here to support the Afatech AF9035 based DVB-T USB2.0 receiver
 
+config DVB_USB_RTL2832
+       tristate "Realtek RTL2832 DVB-T USB2.0 support"
+       depends on DVB_USB
+       default m
+       help
+         Say Y or M to support the Realtek RTL2832 DVB-T receiver
+
