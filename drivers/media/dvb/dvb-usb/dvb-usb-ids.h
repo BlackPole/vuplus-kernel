@@ -341,5 +341,6 @@
 #define USB_PID_AVERMEDIA_3867                         0x3867
 #define USB_PID_TERRATEC_CINERGY_T_STICK               0x0093
 #define USB_PID_TERRATEC_CINERGY_T_STICK_2             0x00aa
+#define USB_PID_WINFAST_DTV_DONGLE_MINI                0x6a03
 
 #endif
