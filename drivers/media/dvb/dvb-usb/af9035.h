@@ -168,6 +168,9 @@ struct af9035_req {
 struct af9035_config {
 	u8 dual_mode:1;
 	u16 mt2060_if1[2];
+	u16 firmware_size;
+	u16 firmware_checksum;
+	u32 eeprom_sum;
 };
 
 struct af9035_segment {
@@ -184,4 +187,28 @@ struct af9035_firmware_header {
 	struct af9035_segment segment[SEGMENT_MAX_COUNT];
 };
 
+enum af9035_remote {
+	AF9035_REMOTE_NONE                    = 0,
+/* 1 */	AF9035_REMOTE_A_LINK_DTU_M,
+	AF9035_REMOTE_MSI_DIGIVOX_MINI_II_V3,
+	AF9035_REMOTE_MYGICTV_U718,
+	AF9035_REMOTE_DIGITTRADE_DVB_T,
+/* 5 */	AF9035_REMOTE_AVERMEDIA_KS,
+};
+
+struct af9035_state {
+	struct i2c_adapter i2c_adap; /* I2C adapter for 2nd FE */
+	u8 rc_repeat;
+	u32 rc_keycode;
+};
+
+enum af9035_ir_mode {
+	AF9035_IR_MODE_DISABLED = 0,
+	AF9035_IR_MODE_HID,
+	AF9035_IR_MODE_RLC,
+	AF9035_IR_MODE_RC6,
+	AF9035_IR_MODE_POLLING, /* just guess */
+};
+
 #endif
+
